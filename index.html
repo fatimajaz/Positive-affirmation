@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    h1{
+      font-size:20px;
+    }
+    button{
+      border-radius: 60%;
+      height:25px;
+      border: 0.5px solid black;
+      color: black;
+    }
+  </style>
+  <body>
+    <title>Positive Affirmations</title>
+</head>
+<body>
+    <h1 id="affirmation">Every day, I am getting stronger and more confident.</h1>
+    <button onclick="newAffirmation()"><i class="fa-solid fa-rotate-right"></i></button>
+  </body>
+    <script>
+        const affirmations = [
+            "Every day, I am getting stronger and more confident.",
+            "I am positive and optimistic about future opportunities.",
+            "I am in charge of how I feel today, and I choose happiness.",
+            "I possess the qualities needed to be extremely successful.",
+            "Challenges are opportunities to grow and improve.",
+            "My potential to succeed is limitless.",
+            "Mistakes are stepping stones to success, teaching me valuable lessons.",
+            "I am grateful for my journey and its lessons.",
+            "Today, I am brimming with energy and overflowing with joy.",
+            "I love and accept myself exactly as I am.",
+            "My body is healthy, and my mind is brilliant.",
+            "My life is just beginning, and I can achieve anything.",
+            "I forgive myself for past mistakes and grow from them.",
+            "Every challenge I face is an opportunity to grow and improve.",
+            "I am fearless in the pursuit of what sets my soul on fire.",
+            "I choose to be proud of myself and the things I choose to do.",
+            "I will succeed today, and nothing will hold me back.",
+            "I am becoming a better version of myself one day at a time.",
+            "I have the power to create change in my life.",
+            "I let go of any negative feelings about myself or my life, and accept all that is good."
+        ];
+
+        function newAffirmation() {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            document.getElementById('affirmation').innerText = affirmations[randomIndex];
+        }
+    </script>
+</body>
+</html>
